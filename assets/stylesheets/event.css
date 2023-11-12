@@ -31,7 +31,7 @@ body, html {
 
 .gallery-prev, .gallery-next {
     position: absolute;
-    top: 80%; /* Centers the links vertically */
+    top: 80%; 
     transform: translateY(-50%); /* Align the links */
 }
 

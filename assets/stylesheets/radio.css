@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+ 
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -19,8 +24,8 @@ body, html {
     width: 50%;
 }
 
-  .accordion {
-    color: #C8E5CF;
+.accordion {
+    color: #F8F7F2;
     cursor: pointer;
     font-size: 40px;
     text-align: center;
@@ -28,10 +33,11 @@ body, html {
     margin: 20px 0px 20px 0px;
   }
 
-  .panel {
+.panel {
     display: none;
     overflow: hidden;
     padding: 20px;
+    background-color: #F3F0AD;
   }
 
 

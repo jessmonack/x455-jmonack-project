@@ -6,60 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/event.css" />
-  <title>test</title>
-    <style>
-body {
-    margin: 0;
-    padding: 0;
-}
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/menu.css" />
+  <title>Menu</title>
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 8px;
-    padding: 8px;
-}
-
-.gallery-item {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    object-fit: cover; /* Ensures the image covers the square area */
-    cursor: pointer;
-}
-
-.lightbox {
-    display: none; 
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    align-items: center;
-    justify-content: center;
-    overflow: auto;
-}
-
-.lightbox-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-.close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: white;
-    font-size: 40px;
-    cursor: pointer;
-}
-
-  </style>
 </head>
 
 <body>
@@ -71,8 +20,8 @@ body {
     <a href="about.html">ABOUT</a>
     <a href="calendar.html">CALENDAR</a>
     <a href="radio.html">RADIO</a>
-    <a href="page-4.html">MENU</a>
-    <a href="#" class="active-menu-item">BOOK EVENT</a>
+    <a href="#" class="active-menu-item">MENU</a>
+    <a href="event.html">BOOK EVENT</a>
   </div>
   <!-- dropdown-menu -->
   <div class="dropdown">
@@ -81,17 +30,16 @@ body {
       <a href="about.html">ABOUT</a>
       <a href="calendar.html">CALENDAR</a>
       <a href="radio.html">RADIO</a>
-      <a href="Page-4.html">MENU</a>
-      <a href="#" class="active-menu-item">BOOK EVENT</a>
+      <a href="#" class="active-menu-item">MENU</a>
+      <a href="event.html">BOOK EVENT</a>
     </div>
   </div>
 </nav>
 
 <div class="container">
   <div class="logo-container">
-      <img src="./assets/images/emerald-events-header.png" alt="Logo" class="event-logo">
-      <h1>CHECK OUT MORE PHOTOS OF OUR SPACE!</h1>
-      <p>READY TO PARTY? DROP US A LINE: EVENTS@THEEMERALD.COM</p>
+      <img src="./assets/images/emerald-menu-header.png" alt="Logo" class="menu-logo">
+      <h1>COCKTAILS & FOOD</h1>
   </div>
 
 <div class="gallery">
@@ -104,7 +52,7 @@ body {
     <img src="./assets/images/crowdsurf copy.jpg.jpg" class="gallery-item" onclick="openLightbox(this)">
     <img src="./assets/images/moody-booth copy.jpg" class="gallery-item" onclick="openLightbox(this)">
     <img src="./assets/images/guy-band copy.jpeg.jpg" class="gallery-item" onclick="openLightbox(this)">
-
+</div>
 </div>
 
 <!-- Lightbox Modal -->
@@ -113,6 +61,19 @@ body {
     <img class="lightbox-content">
     <div id="caption"></div>
 </div>
+
+<footer class="footer-content">
+  <div class="social-icon">
+    <!-- Facebook -->
+    <a href="" target="_blank" class="fa fa-facebook-f fa-lg fa-2x padding-right" style="color: #F8F7F2;"></a>
+    <!--Instagram-->
+    <a href="" target="_blank" class="fa fa-instagram fa-lg fa-2x padding-right" style="color: #F8F7F2;"></a>
+    <!-- Twitter -->
+    <a href="" target="_blank" class="fa fa-twitter fa-lg fa-2x padding-right" style="color: #F8F7F2;"></a>
+    <!-- Pinterest -->
+    <a href="" target="_blank" class="fa fa-pinterest fa-lg fa-2x padding-right" style="color: #F8F7F2;"></a>
+ </div>
+</footer>
 
 <script>
   function openLightbox(img) {

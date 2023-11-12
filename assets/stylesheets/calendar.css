@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Font Family 1;
+}
+
+.container {
+  display: flex;
+  height: 100vh; /* full viewport height */
+  }
+
+  .left-column {
+  flex: 1; /* This will allow the left column to take up the remaining space after the right column's width is set */
+  background-color: #C3DFE0; 
+  padding: 80px;
+  text-align: center;
+  }
+
+  .right-column {
+  background-color: #C3DFE0; 
+  overflow-y: auto; /* column scrollable */
+  padding: 80px;
+  flex: 2;
+  }
+
+  .content-row {
+  display: flex;
+  align-items: center; /*vertically align the image and the text */
+  margin-bottom: 20px; 
+  text-align: left;
+  }
+
+  .content-row img {
+  max-width: 300px; 
+  margin-right: 20px; 
+  }
+
+  .headline {
+    margin-bottom: 20px;
+  }
+
+  .calendar { 
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+  /* Mobile styles */
+@media (max-width: 768px) { 
+  .container {
+      flex-direction: column;
+  }
+
+  .left-column, .right-column {
+      flex-basis: 100%;
+      margin-right: 0;
+  }
+
+  .right-column {
+    height: auto;
+  }
+
+}

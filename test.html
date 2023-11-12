@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/event.css" />
+    <title>Image Gallery</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 8px;
+    padding: 8px;
+}
+
+.grid-item {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover; /* Ensures the image covers the square area */
+    cursor: pointer;
+}
+
+#caption {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Gallery Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three images per row by default */
+    gap: 10px; /* Adjust the gap as needed */
+}
+
+/* Single column view for mobile */
+@media (max-width: 600px) { /* Adjust the breakpoint as needed */
+    .grid {
+        grid-template-columns: 1fr; /* One image per row */
+    }
+}
+
+/* Image Styling */
+.grid-item {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+</style>
+<body>
+    <div class="flex-container logo-bg"><a href="#" style="border-bottom: none;"><img class="logo" src="./assets/images/the-emerald-logo-small.png" alt="logo"/></a></div>
+    <nav>
+      <div class="horizontal-nav flex-container">
+        <a href="about.html">ABOUT</a>
+        <a href="calendar.html">CALENDAR</a>
+        <a href="page-3.html">RADIO</a>
+        <a href="page-4.html">MENU</a>
+        <a href="#" class="active-menu-item">BOOK EVENT</a>
+      </div>
+      <!-- dropdown-menu -->
+      <div class="dropdown">
+        <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
+        <div class="dropdown-content">
+          <a href="about.html">ABOUT</a>
+          <a href="calendar.html">CALENDAR</a>
+          <a href="Page-3.html">RADIO</a>
+          <a href="Page-4.html">MENU</a>
+          <a href="#" class="active-menu-item">BOOK EVENT</a>
+        </div>
+      </div>
+    </nav>
+
+<div class="grid">
+    <img src="./assets/images/drummer1 copy.jpeg.jpg" alt="Image 1" class="grid-item" onclick="openLightbox(this)">
+    <img src="./assets/images/drummer1 copy.jpeg.jpg" alt="Image 2" class="grid-item" onclick="openLightbox(this)">
+    <img src="./assets/images/drummer1 copy.jpeg.jpg" alt="Image 1" class="grid-item" onclick="openLightbox(this)">
+    <img src="./assets/images/drummer1 copy.jpeg.jpg" alt="Image 2" class="grid-item" onclick="openLightbox(this)">
+    <img src="./assets/images/drummer1 copy.jpeg.jpg" alt="Image 1" class="grid-item" onclick="openLightbox(this)">
+    <img src="./assets/images/drummer1 copy.jpeg.jpg" alt="Image 2" class="grid-item" onclick="openLightbox(this)">
+    <img src="./assets/images/drummer1 copy.jpeg.jpg" alt="Image 1" class="grid-item" onclick="openLightbox(this)">
+    <img src="./assets/images/drummer1 copy.jpeg.jpg" alt="Image 2" class="grid-item" onclick="openLightbox(this)">
+    <img src="./assets/images/drummer1 copy.jpeg.jpg" alt="Image 2" class="grid-item" onclick="openLightbox(this)">
+</div>
+
+<footer class="footer-content">
+    <div class="social-icon">
+      <!-- Facebook -->
+      <a href="" target="_blank" class="fa fa-facebook-f fa-lg fa-2x padding-right" style="color: #F8F7F2;"></a>
+      <!--Instagram-->
+      <a href="" target="_blank" class="fa fa-instagram fa-lg fa-2x padding-right" style="color: #F8F7F2;"></a>
+      <!-- Twitter -->
+      <a href="" target="_blank" class="fa fa-twitter fa-lg fa-2x padding-right" style="color: #F8F7F2;"></a>
+      <!-- Pinterest -->
+      <a href="" target="_blank" class="fa fa-pinterest fa-lg fa-2x padding-right" style="color: #F8F7F2;"></a>
+   </div>
+  </footer>
+
+</body>
+</html>

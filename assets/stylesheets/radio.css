@@ -31,6 +31,7 @@ body, html {
     text-align: center;
     background-color: #223127;
     margin: 20px 0px 20px 0px;
+    border-radius: 20px;
   }
 
 .panel {
@@ -38,6 +39,7 @@ body, html {
     overflow: hidden;
     padding: 20px;
     background-color: #F3F0AD;
+    border-radius: 20px;
   }
 
 
